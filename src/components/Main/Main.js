@@ -1,9 +1,21 @@
 import React from 'react'
+import { Route, Switch, Redirect } from "react-router-dom";
 import "./Main.scss"
+import Home from "../../pages/Home/Home"
+import Calculator from "../../pages/Calculator/Calculator"
+import Count from "../../components/Count/Count";
+
 const Main = () => {
   return (
     <div>
-<h3>MAIN</h3>
+       <Switch>
+       <Route path="/home" component={Home} />
+       <Route path="/calculator" component={Calculator} />
+       <Route path="/count" component={Count} />
+
+
+        </Switch>
+ 
     </div>
   )
 }
