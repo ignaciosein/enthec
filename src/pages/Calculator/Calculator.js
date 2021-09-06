@@ -44,8 +44,6 @@ const Calculator = () => {
       setError("")
     } else if (!city) {
       setError("Introduce una ciudad")
-
-    
     } else if (!state) {
       setError("Introduce un estado o provincia")
 
