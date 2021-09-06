@@ -41,17 +41,20 @@ background-color: black;
     >img {
         margin-top: 10%;
         margin-left: 25%;
-        width: 50%;
+        width: 55%;
     }
 }
 .menu-list{
-
-background-color: purple;
+background-color: rgb(150, 150, 150);
 height: 40vh;
 display: flex;
 justify-content: center;
+font-weight: bolder;
+margin-left: -10%;
+text-align: center;
+animation:slide-bottom .5s cubic-bezier(.25,.46,.45,.94) both;
 >ul{
-
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
     list-style: none;
@@ -60,3 +63,6 @@ justify-content: center;
 
 
 }
+
+ 
+@keyframes slide-bottom{0%{transform:translateY(-50px)}100%{transform:translateY(0px)}}
