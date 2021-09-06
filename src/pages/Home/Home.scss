@@ -18,7 +18,7 @@
         border-radius: 8px;
         margin-top: 8%;
         height: 60vh;
-background-color: #d8d8d8;
+background-color: #ffffff;
  
 
     }
@@ -35,6 +35,20 @@ background-color: #d8d8d8;
 
         color: white;
     }
+    >section.bgh-2 > p{
+
+        color: white;
+    }
+   
+}
+.bgh-2{
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("../../img/courier.png")
+    
 }
 .bgh-1{
     color: white;
@@ -46,5 +60,13 @@ background-color: #d8d8d8;
     
 }
  
+
+.bgh-3{
+ 
+
+    >p>img{
+        width: 100%;
+    }
+}
 
  

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
-
+import Empresas from "../../img/empresas.jpg"
 import Newsletter from "../../components/Newsletter/Newsletter";
 import "./Home.scss";
 const cookies = new Cookies();
@@ -25,7 +25,7 @@ const Home = () => {
     <div className="Home">
       {cookie == false ? <Newsletter /> : ""}
       <div className="container-home">
-        <section>
+      <section className="bgh-1">
           <h1>Bienvenid@</h1>
 
           <p>
@@ -41,7 +41,7 @@ const Home = () => {
             Ipsum.
           </p>
         </section>
-        <section className="bgh-1">
+        <section className="bgh-2">
           <h1>INICIO</h1>
 
           <p>
@@ -51,6 +51,14 @@ const Home = () => {
             dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
             aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
             eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            
+          </p>
+        </section>
+        <section  className="bgh-3">
+          <h1>Empresas con las que trabajamos</h1>
+
+          <p>
+            <img src={Empresas}></img>
             
           </p>
         </section>
