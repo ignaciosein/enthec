@@ -4,7 +4,11 @@
 
 .Team {
   
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
     > h2{
+        padding-top: 20%;
         text-align: center;
        
  
@@ -49,4 +53,5 @@
     margin-left: 10%;
  
     flex-wrap: wrap;
+    padding-bottom: 20%;
 }
