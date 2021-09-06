@@ -52,8 +52,9 @@ justify-content: center;
 font-weight: bolder;
 margin-left: -10%;
 text-align: center;
+animation:slide-bottom .5s cubic-bezier(.25,.46,.45,.94) both;
 >ul{
-
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
     list-style: none;
@@ -62,3 +63,6 @@ text-align: center;
 
 
 }
+
+ 
+@keyframes slide-bottom{0%{transform:translateY(-50px)}100%{transform:translateY(0px)}}

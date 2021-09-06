@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Calcs from "../../components/Countrys/Countrys";
-
+import Cookies from 'universal-cookie';
 import "./Calculator.scss";
+ 
+
+
 const Calculator = () => {
   const [countrys, setCountrys] = useState("");
   const [city, setCity] = useState("");
@@ -101,15 +104,15 @@ const Calculator = () => {
        <input type="number" name="cp" onChange={cpChange} required placeholder="Introduce código postal"></input>
 
       <div className="line"></div>
-       <input type="text" name="weigth" onChange={weigthChange} required placeholder="Introduce peso"></input>
+       <input type="text" name="weigth" onChange={weigthChange} required placeholder="Introduce peso(kg)"></input>
  
-      <input type="text" name="length" onChange={lengthChange} required placeholder="Introduce longitud"></input>
+      <input type="text" name="length" onChange={lengthChange} required placeholder="Introduce longitud(cm)"></input>
  
-      <input type="text" name="width" onChange={widthChange} required placeholder="Introduce ancho"></input>
+      <input type="text" name="width" onChange={widthChange} required placeholder="Introduce ancho(cm)"></input>
  
-      <input type="text" name="height" onChange={heightChange} required placeholder="Introduce alto"></input>
+      <input type="text" name="height" onChange={heightChange} required placeholder="Introduce alto(cm)"></input>
  
-      <input type="text" name="value" onChange={valueChange} required placeholder="Introduce valor"></input>
+      <input type="text" name="value" onChange={valueChange} required placeholder="Introduce valor(€)"></input>
 
       <button type="submit" onClick={submit}>
         Calcular envío

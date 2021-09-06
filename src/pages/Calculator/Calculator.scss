@@ -21,7 +21,7 @@
      
     }
      select{
-
+        background-color: white;
         padding-left: 4%;
         margin-left: 25%;
         width: 53%;
@@ -63,5 +63,8 @@
     width: 50%;
     background-color: white;
     font-size: 1.2rem;
+    animation:rotate-hor-center .5s cubic-bezier(.455,.03,.515,.955) both;
 
 }
+
+@keyframes rotate-hor-center{0%{transform:rotateX(0)}100%{transform:rotateX(-360deg)}}

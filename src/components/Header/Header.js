@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 import Logo from "../../img/logo.png";
 import MenuBurger from "../../img/menuburger.png";
@@ -10,10 +11,10 @@ const Header = () => {
       return (
         <div className="menu-list">
           <ul>
-            <li>HOME</li>
-            <li>CONTACT</li>
-            <li>ABOUT</li>
-            <li>PRICING</li>
+          <Link to={"/"}>Inicio</Link>
+            <li>Contacto</li>
+            <li>Acerca de</li>
+            <Link to={"/calculator"}>Calculadora</Link>
           </ul>
         </div>
       );
