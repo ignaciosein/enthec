@@ -24,6 +24,7 @@ const About = () => {
   <div className="line"></div>
 
          {AddressMap()}
+         <br></br>
         <p>Contact us 24/7 (English, Spanish,
         Japanese, Czech) es@code-express.com
         </p>
