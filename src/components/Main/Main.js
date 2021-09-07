@@ -1,10 +1,11 @@
 import React from 'react'
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./Main.scss"
 import Home from "../../pages/Home/Home"
 import Calculator from "../../pages/Calculator/Calculator"
-import Count from "../../components/Count/Count";
-import Newsletter from "../../components/Newsletter/Newsletter";
+ import Team from '../../pages/Team/Team';
+ import Contact from '../../pages/About/About';
+
  
 
 const Main = () => {
@@ -13,8 +14,9 @@ const Main = () => {
        <Switch>
        <Route exact path="/" component={Home}  />
        <Route path="/calculator" component={Calculator} />
-       <Route path="/count" component={Count} />
-       <Route path="/news" component={Newsletter} />
+        <Route path="/team" component={Team} />
+        <Route path="/contact" component={Contact} />
+
  
 
 

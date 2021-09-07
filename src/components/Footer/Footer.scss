@@ -3,14 +3,25 @@
 */
 
 .Footer {
+    color: white;
+    flex-direction: column;
 font-size: 2rem;
     display: flex;
-    margin-top: 100%;
+    margin-top: 20%;
     bottom: 0%;
     margin-bottom: 0%;
     height: 40%;
-    width: 100%;
+ 
     background-color: red;
     clear: both;
+   
     /* propertys here */
+    >p{background-color: black;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 20%;
 }
+    
+}
+ 
