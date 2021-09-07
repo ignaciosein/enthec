@@ -96,6 +96,7 @@ const Calculator = () => {
 
   return (
     <div className="Calculator">
+        <h2>Calcula el coste de tu envío</h2>
        <Calcs name="pais" datos={(countrys) => saveCountry(countrys)} />
        <input type="text" name="city" onChange={cityChange} required placeholder="Introduce tu ciudad"></input>
        <input type="text" name="state" onChange={stateChange} required placeholder="Introduce estado o provincia"></input>

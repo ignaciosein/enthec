@@ -1,4 +1,4 @@
-@import "../../../Sass/_querys";
+@import "../../Sass/_querys";
 
 .Header {
  
@@ -40,6 +40,10 @@ background-color: black;
             width: 10%;
             
         }
+        @include iphoneX-landscape{
+            margin-top: 4%;
+            width: 10%;
+    }
         
         
   
@@ -60,6 +64,9 @@ background-color: black;
         @include desktop{
             font-size: 1rem;
         }
+        @include iphoneX-landscape{
+            font-size: 1.5rem;
+    }
         
     }
 }
@@ -92,6 +99,12 @@ background-color: black;
             width: 30%;
             margin-left: 60%;
         }
+        @include iphoneX-landscape{
+            margin-top: 8%;
+            width: 30%;
+            margin-left: 60%;
+    }
+        
         
  
     }
@@ -125,6 +138,9 @@ animation:slide-bottom .5s cubic-bezier(.25,.46,.45,.94) both;
     padding-bottom: 12%;
     height: 80%;
 }
+@include iphoneX-landscape{
+    height: 80%;
+}
 li{
     margin-top: 2%;
     @include tablet{
@@ -133,6 +149,10 @@ li{
      
         
     }
+    @include iphoneX-landscape{
+        margin-left: 10%;
+        font-size: 1.5rem;
+}
 }
 a{
     text-decoration: none;
