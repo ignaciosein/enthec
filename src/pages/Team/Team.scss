@@ -19,6 +19,9 @@
         padding-top: 10%;
         text-align: center;
        
+        @include iphoneX-landscape{
+            font-size: 2rem;
+        }
  
        
   } 
@@ -49,12 +52,19 @@
    
             font-size: 2rem;
         }
+        @include iphoneX-landscape{
+            font-size: 1rem;
+        }
+        
     }
     >h5{
         font-size: 0.8rem;
         @include tablet{
    
             font-size: 2rem;
+        }
+        @include iphoneX-landscape{
+            font-size: 1rem;
         }
     }
     >h6{

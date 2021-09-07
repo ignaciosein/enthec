@@ -18,6 +18,9 @@
         @include desktop{
             font-size: 2rem;
         }
+        @include iphoneX-landscape{
+            font-size: 1.5rem;
+        }
     }
     
     @include mobile-landscape{
@@ -60,6 +63,10 @@
         @include desktop{
             height: 5vh;
         }
+        @include iphoneX-landscape{
+            font-size: 1rem;
+            height: 10vh;
+        }
         
     }
      select{
@@ -85,6 +92,10 @@
                 @include desktop{
                     height: 5vh;
                 }
+                @include iphoneX-landscape{
+                    font-size: 1rem;
+                    height: 10vh;
+                }
      }
     button{
         color: white;
@@ -103,6 +114,10 @@
                    }
                    @include desktop{
                     height: 5vh;
+                }
+                @include iphoneX-landscape{
+                    font-size: 1rem;
+                    height: 10vh;
                 }
      
 
@@ -135,6 +150,10 @@
 @include desktop{
     margin-bottom: 30%;
     font-size: 1.3rem;
+}
+@include iphoneX-landscape{
+    margin-bottom: 30%;
+    font-size: 1rem;
 }
 
 }

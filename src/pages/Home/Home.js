@@ -42,7 +42,7 @@ const Home = () => {
           </p>
         </section>
         <section className="bgh-2">
-          <h1>INICIO</h1>
+          <h1>LÍDERES EN EL SECTOR</h1>
 
           <p>
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem

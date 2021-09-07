@@ -30,6 +30,9 @@ background-color: #ffffff;
        @include tablet{
            font-size: 3rem;
        }
+       @include iphoneX-landscape{
+        font-size: 1.3rem;
+}
     }
     >section>p{
         width: 80%;
@@ -40,10 +43,16 @@ background-color: #ffffff;
     >section.bgh-1 > p{
 
         color: white;
+        @include iphoneX-landscape{
+            font-size: 0.8rem;
+    }
     }
     >section.bgh-2 > p{
 
         color: white;
+        @include iphoneX-landscape{
+            font-size: 0.8rem;
+    }
     }
    
 }

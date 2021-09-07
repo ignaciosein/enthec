@@ -10,18 +10,16 @@ const Newsletter = () => {
   const [showNews, setShowNews] = useState("");
 
   useEffect(() => {
-    let galleta = cookies.get("news");
+     let galleta = cookies.get("news");
 
     if (galleta == undefined) {
-   
-      /*     alert("no existe cookie") */
-      /*  cookies.set("news","true")
-     setCookie(false) */
+  
       setShowNews(false);
+
     } else {
     
       setShowNews(true);
-      /*    alert("existe cookie") */
+ 
     }
   }, []);
 
@@ -44,9 +42,9 @@ const Newsletter = () => {
     if (mail === "") {
       return ` `;
     } else if (showMail) {
-      /*  cookies.remove("news") */
+   
       cookies.set("news", "true");
-      setInterval(function(){  setShowNews(true);; }, 2000);
+      setInterval(function(){  setShowNews(true);; }, 4000);
       return `Te has suscrito con éxito con el email : ${mail}`;
     } else if (showMail == "fail") {
       return `Introduce un email válido`;
@@ -57,7 +55,7 @@ const Newsletter = () => {
 
   const showDiv = () => {
     return (
-      <div className="Newsletter">
+      <div   className="Newsletter">
        <img src={Close} onClick={()=>setShowNews(true)}></img>
         <p>
           
