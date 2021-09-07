@@ -1,6 +1,5 @@
-/*
- * Home css File
-*/
+@import "../../Sass/_querys";
+
 
 .Home {
     
@@ -17,13 +16,20 @@
     >section{
         border-radius: 8px;
         margin-top: 8%;
-        height: 60vh;
+        height: 70vh;
 background-color: #ffffff;
+@include mobile-landscape{
+    height: 80vh;
+
+}
  
 
     }
     >section>h1{
        text-align: center;
+       @include tablet{
+           font-size: 3rem;
+       }
     }
     >section>p{
         width: 80%;
@@ -63,10 +69,19 @@ background-color: #ffffff;
 
 .bgh-3{
  
-
+   width: 100%;
+   height: 90%;
     >p>img{
         width: 100%;
+        @include mobile-landscape{
+            width: 40%;
+        
+        }
+        @include tablet-landscape{
+            width: 60%;
+        }
     }
+    
 }
 
  

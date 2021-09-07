@@ -1,1 +1,17 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import "./Sass/_querys";
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url("../src/img/box2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @include desktop{
+        width: 40%;
+        margin-left: 30%;
+    
+    }
+
+}

@@ -1,13 +1,13 @@
 /*
  * About css File
 */
-
+@import "../../Sass/_querys";
 .About {
     
     width: 90%;
     background-color: white;
     margin-left: 5%;
-    height: 90vh;
+    height: 90%;
     margin-bottom: 60%;
     border-radius: 12px;
     
@@ -19,6 +19,11 @@
         margin-top: 10%;
         padding-top: 10%;
         padding-bottom: 20%;
+        @include tablet{
+   
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
       
     }
     >section > img{
